@@ -1,0 +1,19 @@
+
+
+.navbar{
+    background-color: #b3e7f4 !important;
+    box-shadow: 0 2px 12px -2px rgb(0 0 0 / 20%);
+}
+
+#navbar-title{
+    color: #fff;
+    font-family: 'Oswald', sans-serif;
+    font-size: 30px;
+}
+
+#nav-logout{
+    background-color: #fff;
+    border-color: #fff;
+    color: #b3e7f4 ;
+    font-family: 'Oswald', sans-serif;
+}
