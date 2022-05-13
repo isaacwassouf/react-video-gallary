@@ -1,0 +1,81 @@
+
+
+
+.auth-main{
+    height: 100%;
+    width: 100%;
+    background-color: var(--auth-background-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#auth-box{
+    width: 25%;
+    padding: 70px 50px 30px 50px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 0px;
+    /* box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px; */
+}
+
+
+.auth-form-heading{
+    text-align: center;
+    text-transform: capitalize;
+    font-family: 'Oswald', sans-serif;
+    letter-spacing: 3px;
+}
+
+
+.auth-form{
+    margin-top: 30px;
+}
+
+.auth-form input[type='email'], .auth-form input[type='password']{
+    padding: 15px;
+    padding-left: 25px;
+}
+
+.auth-form button{
+    padding: 15px;
+    width: 100%;
+    background-color: var(--auth-background-color);
+    border-color: var(--auth-background-color);
+    margin-top: 30px;
+}
+
+
+.auth-form button:hover, .auth-form button:active, .auth-form button:focus{
+    background-color: var(--auth-background-color);
+    border-color: var(--auth-background-color);
+}
+
+.no-account{
+    text-align: center;
+    padding-top: 20px;
+    
+}
+
+.no-account > small > a{
+    color: #75969f;
+}
+
+
+.auth-error{
+    margin-top: 20px
+}
+
+@media (min-width: 320px) and (max-width: 480px) {  
+    #auth-box{
+        width: 90%;
+    }
+    
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    #auth-box{
+        width: 50%;
+    }
+    
+}
