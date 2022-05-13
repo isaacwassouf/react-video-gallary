@@ -4,6 +4,7 @@ import Signup from './components/Signup/Signup';
 import Login from './components/Login/Login';
 import Gallary from './layout/gallary/gallary';
 import GallaryVideos from './components/Gallary/GallaryVideos';
+import Video from './components/Video/Video';
 import ProtectedRoute from './components/Routes/ProtectedRoute';
 import { Routes, Route, Navigate } from 'react-router-dom';
 
@@ -25,6 +26,12 @@ function App() {
           <Route path='' element={
             <ProtectedRoute>
               <Gallary> <GallaryVideos /> </Gallary>
+            </ProtectedRoute>} />
+
+
+          <Route path='video/:videoId' element={
+            <ProtectedRoute>
+              <Gallary> <Video /> </Gallary>
             </ProtectedRoute>} />
 
         </Route>
